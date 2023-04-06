@@ -15,14 +15,3 @@ body {
 	height: 56px;
 }
 
-.projects {
-	display: inline-grid;
-}
-
-.projectCard {
-	background-color: white;
-	color: black;
-	margin: 20px;
-	padding: 20px;
-	border-radius: 15px;
-}

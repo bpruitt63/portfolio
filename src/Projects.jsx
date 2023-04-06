@@ -1,4 +1,5 @@
 import React from 'react';
+import './static/styles/projects.css';
 import {projects} from './static/project_data';
 import Project from './Project';
 
