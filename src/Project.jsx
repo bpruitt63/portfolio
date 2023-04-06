@@ -6,7 +6,7 @@ function Project({project}) {
     const [video, setVideo] = useState(false);
 
     return (
-        <>
+        <div className='projectCard'>
             <h4>{project.title}</h4>
             <p>{project.image}</p>
             <button onClick={() => setVideo(!video)}>
@@ -29,7 +29,7 @@ function Project({project}) {
                 <p>{project.frontendFiles}</p>}
             {project.singleRepo &&
                 <p>{project.singleRepo}</p>}
-        </>
+        </div>
     );
 };
 

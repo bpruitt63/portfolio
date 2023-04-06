@@ -3,7 +3,9 @@ import React from 'react';
 function Intro() {
     
     return (
-        <h1>Brian's Intro</h1>
+        <h1 className='intro'>
+            Brian Pruitt
+        </h1>
     );
 };
 

@@ -1,5 +1,28 @@
 body {
-  text-align: center;
-  background-color: black;
+  	text-align: center;
 }
 
+.intro {
+	background-color: #116466;
+	margin: 56px 0px 0px;
+}
+
+.navbar {
+	background-color: #116466;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 56px;
+}
+
+.projects {
+	display: inline-grid;
+}
+
+.projectCard {
+	background-color: white;
+	color: black;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 15px;
+}
