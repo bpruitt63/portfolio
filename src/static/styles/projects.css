@@ -1,13 +1,28 @@
 .projects {
 	display: inline-grid;
-	grid-template-rows: 1fr 1fr;
-	grid-template-columns: 1fr 1fr;
 }
 
 .projectCard {
 	background-color: white;
 	color: black;
-	margin: 20px;
-	padding: 20px;
+	margin: 5%;
+	padding: 10px 5%;
 	border-radius: 15px;
+    max-width: 80%;
+}
+
+@media screen and (min-width: 769px) {
+    .projects {
+        display: inline-grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .projects {
+        display: inline-grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
