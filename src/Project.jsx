@@ -7,7 +7,7 @@ function Project({project}) {
 
     return (
         <div className='projectCard'>
-            <h4>{project.title}</h4>
+            <h3>{project.title}</h3>
             <img className='projectScreenshot'
                 src={project.image.src}
                 alt={project.image.alt} />
@@ -24,13 +24,31 @@ function Project({project}) {
                     </iframe>
                 </div>}
             <p>{project.description}</p>
-            <p>{project.link}</p>
-            {project.backendFiles &&
-                <p>{project.backendFiles}</p>}
-            {project.frontendFiles &&
-                <p>{project.frontendFiles}</p>}
-            {project.singleRepo &&
-                <p>{project.singleRepo}</p>}
+            <a href={project.link}
+                target='blank'
+                className='projectButton'>
+                View Site
+            </a>
+            <div className='projectRepos'>
+                {project.backendFiles &&
+                    <a href={project.backendFiles}
+                        target='blank'
+                        className='projectButton'>
+                        Backend Repo
+                    </a>}
+                {project.frontendFiles &&
+                    <a href={project.frontendFiles}
+                        target='blank'
+                        className='projectButton'>
+                        Frontend Repo
+                    </a>}
+                {project.singleRepo &&
+                    <a href={project.singleRepo}
+                        target='blank'
+                        className='projectButton'>
+                        Project Repo
+                    </a>}
+            </div>
         </div>
     );
 };
