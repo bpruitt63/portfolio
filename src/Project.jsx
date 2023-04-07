@@ -8,7 +8,9 @@ function Project({project}) {
     return (
         <div className='projectCard'>
             <h4>{project.title}</h4>
-            <p>{project.image}</p>
+            <img className='projectScreenshot'
+                src={project.image.src}
+                alt={project.image.alt} />
             <button onClick={() => setVideo(!video)}>
                 {video ? 'Hide Demo Video' : 'View Demo Video'}
             </button>

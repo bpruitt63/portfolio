@@ -1,7 +1,13 @@
+import sporty from './images/sporty.jpg';
+import gamey from './images/gamey.jpg';
+import boatey from './images/boatey.jpg';
+import cashcount from './images/cashcount.jpg';
+
+
 export const projects = [
     {
         title: 'Sporty',
-        image: 'image',
+        image: {src: sporty, alt: 'Sporty Screenshot'},
         description: 'description',
         link: 'https://sporto-app.herokuapp.com/',
         video: 'https://www.loom.com/embed/befca497d2c443a2bec3e377b9e41c13',
@@ -10,7 +16,7 @@ export const projects = [
     },
     {
         title: 'CashCount',
-        image: 'image',
+        image: {src: cashcount, alt: 'Cashcount Screenshot'},
         description: 'description',
         link: 'https://cashcount.herokuapp.com/',
         video: 'https://www.loom.com/embed/e260c1462962423a8e192d4511bec167',
@@ -19,7 +25,7 @@ export const projects = [
     },
     {
         title: 'Boatey',
-        image: 'image',
+        image: {src: boatey, alt: 'Boatey Screenshot'},
         description: 'description',
         link: 'https://boatey.herokuapp.com/',
         video: 'https://www.loom.com/embed/38885b03926643e8a1e868a2ccd8fc7a',
@@ -28,7 +34,7 @@ export const projects = [
     },
     {
         title: 'Gamey',
-        image: 'image',
+        image: {src: gamey, alt: 'Gamey Screenshot'},
         description: 'description',
         link: 'https://gamey-project.herokuapp.com/',
         video: 'https://www.loom.com/embed/2dd8d96dce2c49a9b9c109c1f62d6511',
