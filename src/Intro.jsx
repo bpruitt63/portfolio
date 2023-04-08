@@ -1,11 +1,15 @@
 import React from 'react';
+import laptop from './static/images/laptop.png';
 
 function Intro() {
     
     return (
-        <h1 className='intro'>
-            Brian Pruitt
-        </h1>
+        <div className='intro'>
+            <h1>Brian Pruitt</h1>
+            <img src={laptop} 
+                alt='Laptop'
+                id='laptop' />
+        </div>
     );
 };
 
