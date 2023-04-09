@@ -19,10 +19,27 @@ h2 {
 	h2 {
 		font-size: 3.5em;
 	}
+
+	.sectionTitle {
+		max-width: 90%;
+		text-align: left;
+		margin: auto;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	.sectionTitle {
+		max-width: 80%;
+		margin: 2% auto;
+	}
 }
 
 @media screen and (min-width: 1225px) {
 	h2 {
 		font-size: 4.5em;
+	}
+
+	.sectionTitle {
+		max-width: 75%;
 	}
 }

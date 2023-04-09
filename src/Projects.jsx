@@ -6,11 +6,14 @@ import Project from './Project';
 function Projects() {
 
     return (
-        <div className='projects'>
+        <>
+            <h2 className='sectionTitle'>Projects</h2>
+            <div className='projects'>
             {projects.map(p =>
                 <Project key={p.link} 
                         project={p} />)}
         </div>
+        </>
     );
 };
 
