@@ -1,7 +1,7 @@
-import sporty from './images/sporty.jpg';
-import gamey from './images/gamey.jpg';
-import boatey from './images/boatey.jpg';
-import cashcount from './images/cashcount.jpg';
+import sporty from '../images/sporty.jpg';
+import gamey from '../images/gamey.jpg';
+import boatey from '../images/boatey.jpg';
+import cashcount from '../images/cashcount.jpg';
 
 
 export const projects = [

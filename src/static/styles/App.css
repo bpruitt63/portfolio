@@ -11,3 +11,18 @@ body {
 	opacity: .95;
 }
 
+h2 {
+	font-size: 2.5em;
+}
+
+@media screen and (min-width: 769px) {
+	h2 {
+		font-size: 3.5em;
+	}
+}
+
+@media screen and (min-width: 1225px) {
+	h2 {
+		font-size: 4.5em;
+	}
+}

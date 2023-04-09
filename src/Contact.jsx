@@ -1,14 +1,17 @@
 import React from 'react';
+import './static/styles/contact.css';
+import { aboutMe } from './static/data/personal_data';
 
 function Contact() {
 
     return (
-        <>
-            <p>email</p>
-            <p>linkedin</p>
+        <div className='contact'>
+            <h2>Contact</h2>
+            <a href={`mailto:${aboutMe.email}`}>{aboutMe.email}</a>
+            <a href={aboutMe.linkedIn}>LinkedIn</a>
             <p>resume</p>
-            <p>github</p>
-        </>
+            <a href={aboutMe.github}>GitHub</a>
+        </div>
     );
 };
 

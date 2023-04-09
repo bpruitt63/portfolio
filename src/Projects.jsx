@@ -1,6 +1,6 @@
 import React from 'react';
 import './static/styles/projects.css';
-import {projects} from './static/project_data';
+import {projects} from './static/data/project_data';
 import Project from './Project';
 
 function Projects() {
