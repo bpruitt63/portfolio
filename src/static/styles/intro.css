@@ -11,12 +11,109 @@
 	margin: -56px 0px 0px;
 }
 
-.intro h1 {
+.name {
 	font-family: 'peace_sansregular', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	padding-top: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.name h1{
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.name h3 {
+    margin-top: 10px;
 }
 
 #laptop {
 	max-width: 80%;
 	padding: 20px 0px 30px;
+}
+
+@media screen and (min-width: 520px) {
+    #laptop {
+        max-width: 400px;
+        display: block;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .intro {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 100px;
+    }
+
+    .name {
+        padding: 0px;
+        margin-left: 10%;
+    }
+
+    .name h1 {
+        margin: 10px 0px 0px;
+        font-size: 4em;
+    }
+
+    .name h3 {
+        margin: 5px;
+        font-size: 1.5em;
+    }
+
+    #laptop {
+        max-width: 45%;
+        padding-top: 10%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .intro {
+        padding-top: 150px;
+    }
+
+    .name {
+        margin-left: 15%;
+    }
+
+    .name h1 {
+        font-size: 5em;
+    }
+
+    #laptop {
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .name {
+        margin-left: 20%;
+    }
+
+    .name h1 {
+        font-size: 6em;
+    }
+
+    .name h3 {
+        font-size: 2em;
+    }
+
+    #laptop {
+        max-width: 50%;
+        margin-left: -5%;
+    }
+}
+
+@media screen and (min-width: 1225px) {
+    #laptop {
+        padding: 70px 0px 50px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #laptop {
+        max-width: 740px;
+        margin-left: -2%;
+    }
 }

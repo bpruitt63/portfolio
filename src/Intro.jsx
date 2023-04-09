@@ -6,7 +6,10 @@ function Intro() {
     
     return (
         <div className='intro'>
-            <h1>Brian<br />Pruitt</h1>
+            <div className='name'>
+                <h1>Brian<br />Pruitt</h1>
+                <h3>Full Stack Developer</h3>
+            </div>
             <img src={laptop} 
                 alt='Laptop'
                 id='laptop' />
