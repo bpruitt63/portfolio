@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'peace_sansregular';
+    src: url('src/static/fonts/PeaceSans/peace_sans-webfont.woff2') format('woff2'),
+         url('src/static/fonts/PeaceSans/peace_sans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.intro {
+	background-color: #116466;
+	margin: -56px 0px 0px;
+}
+
+.intro h1 {
+	font-family: 'peace_sansregular', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	padding-top: 100px;
+}
+
+#laptop {
+	max-width: 80%;
+	padding: 20px 0px 30px;
+}
