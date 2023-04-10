@@ -8,13 +8,7 @@ function Project({project}) {
     return (
         <div className='projectCard'>
             <h3>{project.title}</h3>
-            <img className='projectScreenshot'
-                src={project.image.src}
-                alt={project.image.alt} />
-            <button onClick={() => setVideo(!video)}>
-                {video ? 'Hide Demo Video' : 'View Demo Video'}
-            </button>
-            {video && 
+            {video ? 
                 <div className='iframeDiv'>
                     <iframe src={`${project.video}?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true`}
                             className='iframeVid'
@@ -22,7 +16,14 @@ function Project({project}) {
                             mozallowfullscreen='true'
                             allow='fullscreen'>
                     </iframe>
-                </div>}
+                </div>
+                :
+                <img className='projectScreenshot'
+                    src={project.image.src}
+                    alt={project.image.alt} />}
+            <button onClick={() => setVideo(!video)}>
+                {video ? 'Hide Demo Video' : 'View Demo Video'}
+            </button>
             <p>{project.description}</p>
             <a href={project.link}
                 target='blank'

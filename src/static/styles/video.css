@@ -2,6 +2,7 @@
     position: relative; 
     padding-bottom: 48.02342606149341%; 
     height: 0;
+    margin-bottom: 32px;
 }
 
 .iframeVid {
@@ -11,4 +12,10 @@
     width: 100%; 
     height: 100%;
     border: none;
+}
+
+@media screen and (min-width: 769) {
+    .iframeDiv{
+        margin-bottom: 45px;
+    }
 }
