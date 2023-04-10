@@ -6,6 +6,7 @@ function Contact() {
 
     return (
         <>
+            <div id='contact' className='pageAnchor'></div>
             <h2 className='sectionTitle'>Contact</h2>
             <div className='contact'>
                 <a href={`mailto:${aboutMe.email}`}>{aboutMe.email}</a>
