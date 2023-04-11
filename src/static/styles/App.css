@@ -3,7 +3,7 @@ body {
 }
 
 .navbar {
-	background-color: #116466;
+	background-color: #238d8f;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -12,6 +12,7 @@ body {
 	z-index: 1;
 	display: flex;
 	justify-content: space-around;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
 }
 
 h2 {

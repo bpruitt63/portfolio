@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './static/styles/navbar.css';
+import hamburger from './static/images/hamburger.png';
 
 function Navbar() {
 
@@ -14,7 +15,9 @@ function Navbar() {
             {/** Dropdown for small screens */}
             <div className='dropdown'>
                 <button onClick={toggle}>
-                    Hamburger
+                    <img src={hamburger}
+                        className='icon'
+                        alt='Expand Navigation Menu' />
                 </button>
                 {dropdownOpen && 
                     <div className='dropdownLinks'>

@@ -1,6 +1,7 @@
 #brian {
-    font-size: 1.3em;
+    font-size: 1.1em;
     margin: auto 0;
+    width: 35%;
 }
 
 .dropdown {
@@ -9,7 +10,7 @@
 }
 
 .dropdown button {
-    background-color: #116466;
+    background-color: #238d8f;
     border: none;
     margin: 7px 0px;
     width: 125px;
@@ -27,6 +28,24 @@
 
 .pageLinks {
     display: none;
+    margin: auto 0;
+    width: 35%;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: lightgrey;
+}
+
+.navbar a:active {
+    color: darkgrey;
+}
+
+.icon {
+    max-width: 20px;
 }
 
 @media screen and (min-width: 769px) {
@@ -35,6 +54,12 @@
     }
 
     .pageLinks {
-        display: inline;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #brian {
+        font-size: 1.3em;
+        width: 25%;
     }
 }
