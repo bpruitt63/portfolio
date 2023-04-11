@@ -44,11 +44,11 @@
     .intro {
         display: flex;
         justify-content: space-around;
-        padding-top: 100px;
+        padding-top: 130px;
     }
 
     .name {
-        padding: 0px;
+        padding: 0;
         margin-left: 10%;
     }
 
