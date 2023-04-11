@@ -1,3 +1,40 @@
 #brian {
     font-size: 1.3em;
+    margin: auto 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: #116466;
+    border: none;
+    margin: 7px 0px;
+    width: 125px;
+}
+
+.dropdownLinks {
+    position: absolute;
+    z-index: 2;
+    width: 125px;
+}
+
+.dropdownLinks a {
+    display: block;
+}
+
+.pageLinks {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    .dropdown {
+        display: none;
+    }
+
+    .pageLinks {
+        display: inline;
+    }
 }
