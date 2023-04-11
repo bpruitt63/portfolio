@@ -8,19 +8,17 @@ function Project({project}) {
     return (
         <div className='projectCard'>
             <h3>{project.title}</h3>
-            {video ? 
-                <div className='iframeDiv'>
-                    <iframe src={`${project.video}?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true`}
-                            className='iframeVid'
-                            webkitallowfullscreen='true'
-                            mozallowfullscreen='true'
-                            allow='fullscreen'>
-                    </iframe>
-                </div>
-                :
-                <img className='projectScreenshot'
+            <div className='iframeDiv'>
+                <iframe src={`${project.video}?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true`}
+                        className={`iframeVid${video ? '' : ' hidden'}`}
+                        webkitallowfullscreen='true'
+                        mozallowfullscreen='true'
+                        allow='fullscreen'>
+                </iframe>
+                <img className={`projectScreenshot${video ? ' hidden' : ''}`}
                     src={project.image.src}
-                    alt={project.image.alt} />}
+                    alt={project.image.alt} />
+            </div>
             <button onClick={() => setVideo(!video)}>
                 {video ? 'Hide Demo Video' : 'View Demo Video'}
             </button>
