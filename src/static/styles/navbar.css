@@ -19,11 +19,25 @@
 .dropdownLinks {
     position: absolute;
     z-index: 2;
+    background-color: #238d8f;
     width: 125px;
+    margin-top: 2px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 4px 6px;
 }
 
 .dropdownLinks a {
     display: block;
+    padding: 3px 0px;
+}
+
+.dropdownLinks a:hover {
+    background-color: #05a6a8;
+    overflow: clip;
+}
+
+#bottomDropdownLink:hover {
+    border-radius: 0 0 5px 5px;
 }
 
 .pageLinks {
