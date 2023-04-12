@@ -26,9 +26,12 @@ function Project({project}) {
             <div className={`projectDescription${fullDescription ? '' : ' closed'}`}>
                 {project.description}
             </div>
-            <button onClick={() => setFullDescription(!fullDescription)}>
-                {fullDescription ? 'See less' : 'See more'}
-            </button>
+            <div className='descriptionButtonDiv'>
+                <button className='descriptionButton'
+                        onClick={() => setFullDescription(!fullDescription)}>
+                    {fullDescription ? 'Hide full description' : 'Show full description'}
+                </button>
+            </div>
             <a href={project.link}
                 target='blank'
                 className='projectButton'>

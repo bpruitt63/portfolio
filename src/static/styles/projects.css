@@ -16,9 +16,37 @@
 }
 
 .closed {
-    height: 7em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     overflow: hidden;
-    text-overflow: ellipsis;
+}
+
+.underlined {
+    text-decoration: underline;
+    font-weight: 550;
+}
+
+.descriptionButtonDiv {
+    display: block;
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+.descriptionButton {
+    display: inline-block;
+    border: none;
+    background-color: white;
+    color: #116466;
+    padding: 0 10px;
+}
+
+.descriptionButton:hover {
+    color: #238d8f;
+}
+
+.descriptionButton:active {
+    color: darkgray;
 }
 
 @media screen and (min-width: 769px) {

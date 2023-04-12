@@ -28,10 +28,14 @@ export const projects = [
                             React frontend, Node.js/Express backend, PostgreSQL 
                             database. Styled with React-Bootstrap.
                         </p>
-                        <p>Demo credentials:</p>
-                        <p>Company: demo</p>
-                        <p>Admin User ID: demo</p>
-                        <p>Admin Password: demo1234</p>
+                        <p>
+                            <span className='underlined'>
+                                Demo credentials
+                            </span><br/>
+                            Company: demo<br/>
+                            Admin User ID: demo<br/>
+                            Admin Password: demo1234
+                        </p>
                      </>,
         link: 'https://cashcount.herokuapp.com/',
         video: 'https://www.loom.com/embed/e260c1462962423a8e192d4511bec167',
