@@ -4,6 +4,7 @@ import './static/styles/video.css';
 function Project({project}) {
 
     const [video, setVideo] = useState(false);
+    const [fullDescription, setFullDescription] = useState(false);
 
     return (
         <div className='projectCard'>
@@ -22,7 +23,12 @@ function Project({project}) {
             <button onClick={() => setVideo(!video)}>
                 {video ? 'Hide Demo Video' : 'View Demo Video'}
             </button>
-            <p>{project.description}</p>
+            <div className={`projectDescription${fullDescription ? '' : ' closed'}`}>
+                {project.description}
+            </div>
+            <button onClick={() => setFullDescription(!fullDescription)}>
+                {fullDescription ? 'See less' : 'See more'}
+            </button>
             <a href={project.link}
                 target='blank'
                 className='projectButton'>

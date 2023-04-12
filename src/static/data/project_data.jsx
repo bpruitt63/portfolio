@@ -17,7 +17,22 @@ export const projects = [
     {
         title: 'CashCount',
         image: {src: cashcount, alt: 'Cashcount Screenshot'},
-        description: 'description',
+        description: <>
+                        <p>
+                            Financial tracking dashboard built to improve 
+                            cash tracking at YMCA by reducing counting errors, 
+                            centralizing cash records, and automatically notifying 
+                            leadership of cash variances.
+                        </p>
+                        <p>
+                            React frontend, Node.js/Express backend, PostgreSQL 
+                            database. Styled with React-Bootstrap.
+                        </p>
+                        <p>Demo credentials:</p>
+                        <p>Company: demo</p>
+                        <p>Admin User ID: demo</p>
+                        <p>Admin Password: demo1234</p>
+                     </>,
         link: 'https://cashcount.herokuapp.com/',
         video: 'https://www.loom.com/embed/e260c1462962423a8e192d4511bec167',
         backendFiles: 'https://github.com/bpruitt63/cashCount-backend',

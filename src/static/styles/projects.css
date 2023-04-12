@@ -11,6 +11,16 @@
     max-width: 80%;
 }
 
+.projectDescription {
+    text-align: left;
+}
+
+.closed {
+    height: 7em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 @media screen and (min-width: 769px) {
     .projects {
         display: inline-grid;
