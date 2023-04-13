@@ -1,5 +1,6 @@
 .projects {
 	display: inline-grid;
+    align-items: start;
 }
 
 .projectCard {
@@ -52,7 +53,6 @@
 @media screen and (min-width: 769px) {
     .projects {
         display: inline-grid;
-        grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
 
