@@ -9,7 +9,7 @@ export const aboutMe = {
                 sollicitudin arcu. Aliquam a nunc commodo, fringilla orci 
                 sed, consectetur metus. Praesent et egestas urna. Vestibulum 
                 ac ligula vitae metus elementum suscipit in ut est.`,
-    email: 'brianrpruitt62@gmail.com',
+    email: 'brianrpruitt63@gmail.com',
     linkedIn: 'https://www.linkedin.com/in/brian-pruitt63/',
     github: 'https://github.com/bpruitt63'
 };
