@@ -1,9 +1,18 @@
 .contact {
-    text-align: left;
-    max-width: 80%;
+    display: flex;
+}
+
+.contactLinks {
+    width: 80%;
     margin: auto;
 }
 
-.contact a {
+.contactLinks a {
     display: block;
 }
+
+/* .contactLinks {
+    text-align: left;
+    max-width: 80%;
+    margin: auto;
+} */
