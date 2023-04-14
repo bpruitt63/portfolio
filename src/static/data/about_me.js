@@ -1,5 +1,4 @@
-export const aboutMe = {
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing 
+export const aboutMe = `Lorem ipsum dolor sit amet, consectetur adipiscing 
                 elit. Phasellus consectetur, lacus placerat sollicitudin 
                 pretium, tellus libero malesuada ligula, quis volutpat 
                 lorem est quis est. Curabitur magna lorem, semper eu magna 
@@ -8,8 +7,4 @@ export const aboutMe = {
                 vitae placerat fermentum. Mauris at mattis diam, vitae 
                 sollicitudin arcu. Aliquam a nunc commodo, fringilla orci 
                 sed, consectetur metus. Praesent et egestas urna. Vestibulum 
-                ac ligula vitae metus elementum suscipit in ut est.`,
-    email: 'brianrpruitt63@gmail.com',
-    linkedIn: 'https://linkedin.com/in/brian-pruitt63/',
-    github: 'https://github.com/bpruitt63'
-};
+                ac ligula vitae metus elementum suscipit in ut est.`

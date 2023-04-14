@@ -1,5 +1,5 @@
 .contact {
-    display: flex;
+    display: grid;
 }
 
 .contactLinks {
@@ -8,7 +8,12 @@
 }
 
 .contactLinks a {
-    display: block;
+    display: inline;
+}
+
+.contactIcon {
+    width: 25px;
+    display: inline;
 }
 
 /* .contactLinks {

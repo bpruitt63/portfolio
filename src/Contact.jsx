@@ -1,7 +1,8 @@
 import React from 'react';
 import './static/styles/contact.css';
-import { aboutMe } from './static/data/personal_data';
+import { links } from './static/data/links';
 import ContactForm from './ContactForm';
+import ContactLink from './ContactLink';
 
 function Contact() {
 
@@ -11,24 +12,14 @@ function Contact() {
             <h2 className='sectionTitle'>Contact</h2>
             <div className='contact'>
                 <div className='contactLinks'>
-                    <a href={`mailto:${aboutMe.email}`}
-                        target='blank'>
-                            {aboutMe.email}
-                    </a>
-                    <a href={aboutMe.linkedIn}
-                        target='blank'>
-                        LinkedIn
-                    </a>
-                    <a href='/src/brian_pruitt_resume.pdf'
-                        target='blank'>
-                        Resume
-                    </a>
-                    <a href={aboutMe.github}
-                        target='blank'>
-                        GitHub
-                    </a>
+                    {Object.keys(links).map(l =>
+                        <ContactLink key={l}
+                                    type={l}
+                                    link={links[l].link}
+                                    image={links[l].img}
+                                    label={links[l].label} />)}
                 </div>
-                <div>
+                <div className='contactForm'>
                     <ContactForm />
                 </div>
             </div>
