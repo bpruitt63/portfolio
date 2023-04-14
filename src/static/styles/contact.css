@@ -3,12 +3,27 @@
 }
 
 .contactLinks {
-    width: 80%;
+    max-width: 80%;
     margin: auto;
 }
 
-.contactLinks a {
+.contactLink {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.contactLink a {
     display: inline;
+    font-size: .9em;
+    margin-left: 15px;
+    color: lightgrey;
+}
+
+.contactLink a:hover {
+    color: white;
 }
 
 .contactIcon {
@@ -16,8 +31,73 @@
     display: inline;
 }
 
-/* .contactLinks {
-    text-align: left;
+.contactForm {
     max-width: 80%;
-    margin: auto;
-} */
+    margin: 20px auto;
+}
+
+#contactMe {
+    width: 100%;
+    text-align: left;
+}
+
+.contactForm input, .contactForm textarea {
+    font-family: inherit;
+    font-size: 100%;
+    width: 90%;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 5%;
+    margin-bottom: 20px;
+}
+
+.contactForm input:focus, textarea:focus {
+    outline-color: gray;
+}
+
+@media screen and (min-width: 500px) {
+    .contactLink a {
+        font-size: 1.1em;
+        margin-left: 25px;
+    }
+
+    .contactForm input, .contactForm textarea {
+        padding: 15px 5%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .contact {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contactLinks {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .contactLink {
+        height: 20%;
+        margin: 0;
+    }
+
+    .contactIcon {
+        width: 35px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .contactLinks {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+    .contactForm input, .contactForm textarea {
+        width: 95%;
+        margin-left: -10%;
+    }
+}

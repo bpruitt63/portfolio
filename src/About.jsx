@@ -7,7 +7,7 @@ function About() {
         <>
             <div id='about' className='pageAnchor'></div>
             <h2 className='sectionTitle'>About me</h2>
-            <p>{aboutMe.description}</p>
+            <p>{aboutMe}</p>
         </>
     );
 };

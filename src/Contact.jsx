@@ -20,10 +20,10 @@ function Contact() {
                                     label={links[l].label} />)}
                 </div>
                 <div className='contactForm'>
+                    <h3 id='contactMe'>Contact Me</h3>
                     <ContactForm />
                 </div>
             </div>
-            
         </>
     );
 };
