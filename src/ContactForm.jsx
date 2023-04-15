@@ -1,23 +1,37 @@
 import React, {useState} from 'react';
+import emailjs from '@emailjs/browser';
+
+const publicKey = '7IdLWSrEU9nztkneg';
 
 function ContactForm() {
 
     const initialState = {name: '', email: '', message: ''};
     const [data, setData] = useState(initialState);
     const [errors, setErrors] = useState([]);
+    const [message, setMessage] = useState('');
 
     const handleChange = (e) => {
         const {name, value} = e.target;
         setData(d => ({...d, [name]: value}));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setErrors([]);
         if (!validate()) return false;
-        console.log(data);
         setData(initialState);
+        try {
+            await emailjs.send('portfolio_contact', 'portfolio_template', data, publicKey);
+            toast('Email sent');
+        } catch (err) {
+            setErrors([`${err.name}: ${err.message}`]);
+        };
     };
+
+    const toast = (msg) => {
+        setMessage(msg);
+        setTimeout(() => {setMessage('')}, 2000);
+    }
 
     const validate = () => {
         const {name, email, message} = data;
@@ -29,7 +43,6 @@ function ContactForm() {
         if (email && !email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i)) err.push('Not a valid email format');
         if (!message) err.push('Message is required');
         if (message.length > 1000) err.push('Message cannot exceed 1000 characters');
-        console.log(name)
         if (err.length) {
             setErrors(err);
             return false;
@@ -40,7 +53,9 @@ function ContactForm() {
     return (
         <>
             {errors.map(e => 
-                <p key={e}>{e}</p>)}
+                <p key={e} className='error'>{e}</p>)}
+            {message && 
+                <p className='success'>{message}</p>}
             <form onSubmit={handleSubmit}>
                 <input type='text'
                         name='name'

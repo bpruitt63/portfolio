@@ -55,6 +55,18 @@
     outline-color: gray;
 }
 
+.error {
+    background-color: lightcoral;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.success {
+    background-color: #116466;
+    padding: 8px;
+    border-radius: 8px;
+}
+
 @media screen and (min-width: 500px) {
     .contactLink a {
         font-size: 1.1em;
