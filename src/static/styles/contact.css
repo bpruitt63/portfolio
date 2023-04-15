@@ -112,4 +112,8 @@
         width: 95%;
         margin-left: -10%;
     }
+
+    .error, .success, #contactMe {
+        margin: 25px 2% 25px -8%;
+    }
 }
