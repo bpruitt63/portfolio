@@ -1,4 +1,5 @@
 import React from 'react';
+import './static/styles/about.css';
 import { aboutMe } from './static/data/about_me';
 
 function About() {
@@ -7,7 +8,7 @@ function About() {
         <>
             <div id='about' className='pageAnchor'></div>
             <h2 className='sectionTitle'>About me</h2>
-            <p>{aboutMe}</p>
+            <div className='aboutMe'>{aboutMe}</div>
         </>
     );
 };
