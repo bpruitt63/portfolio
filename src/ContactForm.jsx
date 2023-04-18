@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import emailjs from '@emailjs/browser';
 
-const publicKey = '7IdLWSrEU9nztkneg';
+const publicKey = secrets.EMAIL_PUBLIC_KEY;
 
 function ContactForm() {
 
