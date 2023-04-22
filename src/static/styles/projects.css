@@ -54,25 +54,6 @@
     color: darkgray;
 }
 
-@media screen and (min-width: 769px) {
-    .projects {
-        display: inline-grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .projectCard {
-        max-width: 400px;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .projects {
-        display: inline-grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-
 .projectScreenshot {
     max-width: 100%;
 }
@@ -92,7 +73,7 @@
 }
 
 .projectButton:hover {
-    border-color: #646cff;
+    border-color: gray;
     color: black;
 }
 
@@ -104,5 +85,24 @@
     .projectRepos {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .projects {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .projectCard {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .projects {
+        display: inline-grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

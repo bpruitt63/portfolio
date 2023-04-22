@@ -44,7 +44,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: gray;
 }
 
 @media (prefers-color-scheme: light) {

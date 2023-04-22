@@ -55,6 +55,10 @@
     outline-color: gray;
 }
 
+.contactForm button:hover {
+    background-color: lightgray;
+}
+
 .error {
     background-color: lightcoral;
     padding: 8px;
