@@ -2,3 +2,52 @@
     width: 80%;
     margin: auto;
 }
+
+.mySkills {
+    width: 80%;
+    margin: auto;
+}
+
+.mySkills h3 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.mySkills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.mySkills li {
+    margin: 0 0 15px;
+}
+
+.skill {
+    font-weight: 630;
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 1000px) {
+    .about {
+        display: flex;
+    }
+
+    .aboutMe {
+        margin: 0 10%;
+        text-align: left;
+    }
+
+    .aboutImage {
+        width: 100%;
+    }
+
+    .mySkills {
+        margin: 30px 10% 0;
+        text-align: left;
+    }
+
+    .mySkills h3 {
+        margin-top: 5px;
+    }
+}

@@ -2,6 +2,10 @@
     display: grid;
 }
 
+#contact {
+    padding-bottom: 1px;
+}
+
 .contactLinks {
     max-width: 80%;
     margin: auto;
