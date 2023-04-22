@@ -12,6 +12,10 @@
     max-width: 80%;
 }
 
+.projectCard h3 {
+    font-size: 1.5em;
+}
+
 .projectDescription {
     text-align: left;
 }

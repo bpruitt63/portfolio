@@ -23,6 +23,10 @@ h2 {
 	margin-bottom: 56px;
 }
 
+.sectionTitle {
+	font-weight: 600;
+}
+
 @media screen and (min-width: 769px) {
 	h2 {
 		font-size: 3.5em;
