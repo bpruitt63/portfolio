@@ -1,7 +1,7 @@
 import React from 'react';
 import './static/styles/intro.css';
-//import laptop from './static/images/laptop.png';
-import programmer from './static/images/programmer.png';
+import computer_guy from './static/images/computer_guy.png';
+//import programmer from './static/images/programmer.png';
 
 function Intro() {
     
@@ -11,9 +11,9 @@ function Intro() {
                 <h1>Brian<br />Pruitt</h1>
                 <h3>Full Stack Developer</h3>
             </div>
-            <img src={programmer} 
-                alt='Programmer'
-                id='programmerImg' />
+            <img src={computer_guy} 
+                alt='Man at computer'
+                id='introImg' />
         </div>
     );
 };
