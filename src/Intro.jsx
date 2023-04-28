@@ -1,7 +1,6 @@
 import React from 'react';
 import './static/styles/intro.css';
 import computer_guy from './static/images/computer_guy.png';
-//import programmer from './static/images/programmer.png';
 
 function Intro() {
     
