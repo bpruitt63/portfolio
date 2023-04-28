@@ -2,14 +2,16 @@ export const aboutMe = <>
                             <p>
                                 I am a tenacious software developer who doesn't 
                                 put down a problem until I find the best possible 
-                                solution. After several years as an accomplished 
-                                YMCA Program Director (and two time Interim CEO), 
-                                more than doubling the Y's program offerings and 
-                                participation during my tenure, I decided to take 
-                                on the challenge of transitioning my software 
-                                programming hobby into a career, giving me 
-                                a greater opportunity to use my creativity 
-                                and problem solving skills to create new programs 
+                                solution.  In my past life as a YMCA Program Director,
+                                I utilized my leadership skills, project management,
+                                and attention to detail to more than double the Y's 
+                                program offerings and participation, further growing
+                                those leadership skills during my two 
+                                periods as Interim CEO.  When I decided it was time
+                                for a new challenge, I opted to transition my 
+                                software programming hobby into a career, giving 
+                                me a greater opportunity to use my creativity and 
+                                problem solving skills to build and improve programs 
                                 that can be used by people for a long time to come.
                             </p>
                             <p>

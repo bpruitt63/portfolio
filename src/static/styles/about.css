@@ -3,12 +3,7 @@
     margin: auto;
 }
 
-.mySkills {
-    width: 80%;
-    margin: auto;
-}
-
-.mySkills h3 {
+.aboutMe h3 {
     font-size: 2em;
     font-weight: 600;
     margin-bottom: 0;
@@ -28,26 +23,53 @@
     font-size: 1.2em;
 }
 
+#aboutImage {
+    display: none;
+}
+
 @media screen and (min-width: 1000px) {
     .about {
         display: flex;
     }
 
+    .aboutImageDiv {
+        margin: auto;
+        width: 50%;
+    }
+
+    #aboutImage {
+        display: inline;
+        max-height: 450px;
+        margin: auto;
+    }
+
     .aboutMe {
+        width: 40%;
         margin: 0 10%;
         text-align: left;
     }
 
-    .aboutImage {
-        width: 100%;
-    }
-
     .mySkills {
-        margin: 30px 10% 0;
+        margin: 30px 0 0;
         text-align: left;
     }
 
     .mySkills h3 {
         margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .aboutImageDiv {
+        width: 60%;
+    }
+
+    #aboutImage {
+        max-height: 600px;
+    }
+
+    .aboutMe {
+        width: 35%;
+        margin: 0 15% 0 2%;
     }
 }
