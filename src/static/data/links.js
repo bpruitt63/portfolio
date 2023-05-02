@@ -2,6 +2,7 @@ import email from '../images/email.png';
 import resume from '../images/resume.png';
 import linkedin from '../images/linkedin.png';
 import github from '../images/github.png';
+import pdf from '../../brian_pruitt_resume.pdf';
 
 export const links = {
     Email: {link: 'mailto:brianrpruitt63@gmail.com', 
@@ -13,7 +14,7 @@ export const links = {
     GitHub: {link: 'https://github.com/bpruitt63', 
             img: github,
             label: 'GitHub.com/bpruitt63'},
-    Resume: {link: '/src/brian_pruitt_resume.pdf', 
+    Resume: {link: pdf, 
             img: resume,
             label: 'Resume'}
 };
