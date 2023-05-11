@@ -1,12 +1,19 @@
-.aboutMe {
+.about {
     width: 80%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.aboutMe h3 {
-    font-size: 2em;
+.about h3 {
+    font-size: 1.8em;
     font-weight: 600;
     margin-bottom: 0;
+}
+
+.aboutMe {
+    order: -1;
+    margin-top: -30px;
 }
 
 .mySkills ul {
@@ -29,47 +36,99 @@
 
 @media screen and (min-width: 1000px) {
     .about {
+        flex-direction: row;
+    }
+
+    .about h3 {
+        font-size: 2em;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .aboutLeftCol {
+        width: 50%;
         display: flex;
+        flex-direction: column;
+        align-items: start;
     }
 
     .aboutImageDiv {
-        margin: auto;
-        width: 50%;
+        margin: auto 0;
+        padding-bottom: 20px;;
     }
 
     #aboutImage {
         display: inline;
-        max-height: 450px;
-        margin: auto;
+        max-height: 400px;
     }
 
     .aboutMe {
         width: 40%;
         margin: 0 10%;
         text-align: left;
+        order: 1;
     }
 
     .mySkills {
-        margin: 30px 0 0;
+        max-width: 311px;
+        margin: auto 0;
         text-align: left;
     }
+}
 
-    .mySkills h3 {
-        margin-top: 5px;
+@media screen and (min-width: 1225px) {
+    .aboutLeftCol {
+        width: 50%;
+    }
+
+    #aboutImage {
+        max-height: 500px;
+    }
+
+    .mySkills {
+        max-width: 389px;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .aboutLeftCol {
+        width: 60%;
+        margin-left: 5%;
+    }
+
+    #aboutImage {
+        max-height: 525px;
+    }
+
+    .aboutMe {
+        width: 40%;
+        margin: 0 10%;
+        text-align: left;
+        order: 1;
     }
 }
 
 @media screen and (min-width: 1500px) {
-    .aboutImageDiv {
-        width: 60%;
-    }
-
-    #aboutImage {
-        max-height: 600px;
+    .aboutLeftCol {
+        margin-left: 10%;
     }
 
     .aboutMe {
-        width: 35%;
-        margin: 0 15% 0 2%;
+        margin: 0 10% 0 15%;
+    }
+
+    .mySkills {
+        max-width: 409px;
+    }
+}
+
+@media screen and (min-width: 1650px) {
+    .aboutLeftCol {
+        width: 45%;
+    }
+
+    .aboutMe {
+        width: 25%;
+        margin: 0 20% 0 10%;
     }
 }
