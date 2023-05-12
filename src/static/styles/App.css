@@ -2,6 +2,10 @@ body {
   	text-align: center;
 }
 
+button {
+	color: black;
+}
+
 .navbar {
 	background-color: #238d8f;
 	position: fixed;
