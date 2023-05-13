@@ -22,7 +22,9 @@
 
 .closed {
     display: -webkit-box;
+    display: -moz-box;
     -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
 }
