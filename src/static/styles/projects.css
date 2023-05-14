@@ -18,7 +18,11 @@
 
 .projectDescription {
     text-align: left;
-    display: inline-block;
+    margin-top: 15px;
+}
+
+.projectDescription p {
+    display: inline;
 }
 
 .closed {
@@ -28,7 +32,6 @@
     -moz-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-    line-height: 1.5;
 }
 
 .underlined {

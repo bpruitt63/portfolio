@@ -14,11 +14,11 @@ export const projects = [
                             builds schedule for YMCA youth sports league seasons.  
                             Made twice as fast the process of scheduling games, 
                             tracking results, ranking teams, and seeding tournaments.
-                        </p>
+                        </p><br/><br/>
                         <p>
                             React frontend, Node.js backend, PostgreSQL database.  
                             React-bootstrap styling
-                        </p>
+                        </p><br/><br/>
                         <p>
                             <span className='underlined'>
                                 Demo credentials
@@ -41,11 +41,11 @@ export const projects = [
                             cash tracking at YMCA by reducing counting errors, 
                             centralizing cash records, and automatically notifying 
                             leadership of cash variances.
-                        </p>
+                        </p><br/><br/>
                         <p>
                             React frontend, Node.js/Express backend, PostgreSQL 
                             database. Styled with React-Bootstrap.
-                        </p>
+                        </p><br/><br/>
                         <p>
                             <span className='underlined'>
                                 Demo credentials
@@ -70,11 +70,11 @@ export const projects = [
                             Mapbox API to display local area maps and calculate 
                             distance between destinations, and Weatherbit API 
                             to display local weather.
-                        </p>
+                        </p><br/><br/>
                         <p>
                             React frontend, Node.js backend, PostgreSQL database.  
                             Reactstrap styling
-                        </p>
+                        </p><br/><br/>
                         <p>
                             <span className='underlined'>
                                 Demo credentials
@@ -97,12 +97,12 @@ export const projects = [
                             data on specific video games. Users can review games, 
                             ask and answer questions, and upvote/downvote reviews 
                             and answers.
-                        </p>
+                        </p><br/><br/>
                         <p>
                             Flask with Python, Jinja, Flask SQLAlchemy, Flask 
                             WTForms, Flask Bcrypt, JavaScript with axios, and 
                             PostgreSQL database.
-                        </p>
+                        </p><br/><br/>
                         <p>
                             <span className='underlined'>
                                 Demo credentials
