@@ -18,6 +18,7 @@
 
 .projectDescription {
     text-align: left;
+    display: inline-block;
 }
 
 .closed {
