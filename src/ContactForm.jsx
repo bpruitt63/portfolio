@@ -9,10 +9,18 @@ function ContactForm() {
     const [data, setData] = useState(initialState);
     const [errors, setErrors] = useState([]);
     const [message, setMessage] = useState('');
+    const [disabled, setDisabled] = useState(true);
 
     const handleChange = (e) => {
         const {name, value} = e.target;
-        setData(d => ({...d, [name]: value}));
+        const newData = {...data};
+        newData[name] = value;
+        setData(newData);
+        if (newData.name.length && newData.email.length && newData.message.length) {
+            setDisabled(false);
+        } else {
+            setDisabled(true);
+        };
     };
 
     const handleSubmit = async (e) => {
@@ -72,7 +80,10 @@ function ContactForm() {
                         rows='8'
                         value={data.message}
                         onChange={handleChange} />
-                <button type='submit'>Submit</button>
+                <button type='submit'
+                        disabled={disabled}>
+                            Submit
+                </button>
             </form>
         </>
     );

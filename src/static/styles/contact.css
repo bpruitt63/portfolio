@@ -63,6 +63,16 @@
     background-color: lightgray;
 }
 
+.contactForm button:disabled {
+    background-color: lightgray;
+    color: gray;
+}
+
+.contactForm button:disabled:hover {
+    border-color: lightgray;
+    cursor: not-allowed;
+}
+
 .error {
     background-color: lightcoral;
     padding: 8px;
