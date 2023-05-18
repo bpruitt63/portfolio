@@ -16,7 +16,7 @@ function ContactForm() {
         const newData = {...data};
         newData[name] = value;
         setData(newData);
-        if (newData.name.length && newData.email.length && newData.message.length) {
+        if (newData.name.length > 0 && newData.email.length > 0 && newData.message.length > 0) {
             setDisabled(false);
         } else {
             setDisabled(true);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './static/styles/App.css';
 import Navbar from './Navbar';
 import Intro from './Intro';
@@ -8,6 +8,10 @@ import Contact from './Contact';
 import Footer from './Footer';
 
 function App() {
+
+	useEffect(() => {
+		document.body.scrollTop = document.documentElement.scrollTop = 0;
+	}, []);
 
 	const [dropdownOpen, setDropdownOpen] = useState(false);
 	const closeDropdown = () => {
