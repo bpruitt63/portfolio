@@ -11,15 +11,23 @@ function ContactForm() {
     const [message, setMessage] = useState('');
     const [disabled, setDisabled] = useState(true);
 
+    // const handleChange = (e) => {
+    //     const {name, value} = e.target;
+    //     const newData = {...data};
+    //     newData[name] = value;
+    //     if (newData.name.length && newData.email.length && newData.message.length) {
+    //         setDisabled(false);
+    //     } else {
+    //         setDisabled(true);
+    //     };
+    //     setData(newData);
+    // };
+
     const handleChange = (e) => {
         const {name, value} = e.target;
         const newData = {...data};
         newData[name] = value;
-        if (newData.name.length && newData.email.length && newData.message.length) {
-            setDisabled(false);
-        } else {
-            setDisabled(true);
-        };
+        setDisabled(false);
         setData(newData);
     };
 
