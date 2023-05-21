@@ -59,18 +59,18 @@
     outline-color: gray;
 }
 
-/* .submitButton {
+.submitButton {
     max-width: 120px;
     color: black;
     border-radius: 8px;
     border: 1px solid lightgrey;
     background-color: #f9f9f9;
-    padding: 0.6em 1.2em;
+    padding: 12px 15px !important;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     cursor: pointer;
-} */
+}
 
 .submitButton:hover {
     border-color: gray;
