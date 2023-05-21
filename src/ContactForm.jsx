@@ -5,29 +5,21 @@ const publicKey = '7IdLWSrEU9nztkneg';
 
 function ContactForm() {
 
-    const initialState = {name: '', email: '', message: ''};
+    const initialState = {name: '', email: '', message: '', disabled: true};
     const [data, setData] = useState(initialState);
     const [errors, setErrors] = useState([]);
     const [message, setMessage] = useState('');
-    const [disabled, setDisabled] = useState(true);
 
-    // const handleChange = (e) => {
-    //     const {name, value} = e.target;
-    //     const newData = {...data};
-    //     newData[name] = value;
-    //     if (newData.name.length && newData.email.length && newData.message.length) {
-    //         setDisabled(false);
-    //     } else {
-    //         setDisabled(true);
-    //     };
-    //     setData(newData);
-    // };
 
     const handleChange = (e) => {
         const {name, value} = e.target;
         const newData = {...data};
         newData[name] = value;
-        setDisabled(false);
+        if (newData.name.length && newData.email.length && newData.message.length) {
+            newData.disabled = false;
+        } else {
+            newData.disabled = true;
+        };
         setData(newData);
     };
 
@@ -35,13 +27,15 @@ function ContactForm() {
         e.preventDefault();
         setErrors([]);
         if (!validate()) return false;
-        setData(initialState);
+        const emailData = {...data};
+        delete emailData.disabled;
         try {
-            await emailjs.send('portfolio_contact', 'portfolio_template', data, publicKey);
+            await emailjs.send('portfolio_contact', 'portfolio_template', emailData, publicKey);
             toast('Email sent');
         } catch (err) {
             setErrors([`${err.name}: ${err.message}`]);
         };
+        setData(initialState);
     };
 
     const toast = (msg) => {
@@ -89,7 +83,7 @@ function ContactForm() {
                         value={data.message}
                         onChange={handleChange} />
                 <button type='submit'
-                        disabled={disabled}>
+                        disabled={data.disabled}>
                             Submit
                 </button>
             </form>
