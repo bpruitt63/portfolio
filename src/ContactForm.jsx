@@ -82,10 +82,9 @@ function ContactForm() {
                         rows='8'
                         value={data.message}
                         onChange={handleChange} />
-                <button type='submit'
-                        disabled={data.disabled}>
-                            Submit
-                </button>
+                <input type='submit'
+                        className='submitButton'
+                        disabled={data.disabled} />
             </form>
         </>
     );

@@ -59,16 +59,30 @@
     outline-color: gray;
 }
 
-.contactForm button:hover {
+.submitButton {
+    max-width: 120px;
+    color: black;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    background-color: #f9f9f9;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    border-color: gray;
     background-color: lightgray;
 }
 
-.contactForm button:disabled {
+.submitButton:disabled {
     background-color: lightgray;
     color: gray;
 }
 
-.contactForm button:disabled:hover {
+.submitButton:disabled:hover {
     border-color: lightgray;
     cursor: not-allowed;
 }
