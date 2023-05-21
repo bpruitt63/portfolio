@@ -11,14 +11,27 @@ function ContactForm() {
     const [message, setMessage] = useState('');
 
 
+    // const handleChange = (e) => {
+    //     const {name, value} = e.target;
+    //     const newData = {...data};
+    //     newData[name] = value;
+    //     if (newData.name.length && newData.email.length && newData.message.length) {
+    //         newData.disabled = false;
+    //     } else {
+    //         newData.disabled = true;
+    //     };
+    //     setData(newData);
+    // };
+
     const handleChange = (e) => {
         const {name, value} = e.target;
         const newData = {...data};
         newData[name] = value;
+        const submitButton = document.querySelector('.submitButton');
         if (newData.name.length && newData.email.length && newData.message.length) {
-            newData.disabled = false;
+            submitButton.disabled = false;
         } else {
-            newData.disabled = true;
+            submitButton.disabled = true;
         };
         setData(newData);
     };
@@ -82,9 +95,11 @@ function ContactForm() {
                         rows='8'
                         value={data.message}
                         onChange={handleChange} />
-                <input type='submit'
+                <button type='submit'
                         className='submitButton'
-                        disabled={data.disabled} />
+                        disabled>
+                            Submit
+               </button>
             </form>
         </>
     );
