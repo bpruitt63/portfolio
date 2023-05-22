@@ -59,7 +59,7 @@
     outline-color: gray;
 }
 
-.submitButton {
+/* .submitButton {
     max-width: 120px;
     color: black;
     border-radius: 8px;
@@ -70,7 +70,7 @@
     font-weight: 500;
     font-family: inherit;
     cursor: pointer;
-}
+} */
 
 .submitButton:hover {
     border-color: gray;

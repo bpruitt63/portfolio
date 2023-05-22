@@ -23,15 +23,34 @@ function ContactForm() {
     //     setData(newData);
     // };
 
+    // const handleChange = (e) => {
+    //     const {name, value} = e.target;
+    //     const newData = {...data};
+    //     newData[name] = value;
+    //     const submitButton = document.querySelector('.submitButton');
+    //     if (newData.name.length && newData.email.length && newData.message.length) {
+    //         submitButton.disabled = false;
+    //     } else {
+    //         submitButton.disabled = true;
+    //     };
+    //     setData(newData);
+    // };
+
+    const UA = navigator.userAgent;
+    const isWebkit =
+        /\b(iPad|iPhone|iPod)\b/.test(UA) &&
+        /WebKit/.test(UA) &&
+        !/Edge/.test(UA) &&
+        !window.MSStream;
+
     const handleChange = (e) => {
         const {name, value} = e.target;
         const newData = {...data};
         newData[name] = value;
-        const submitButton = document.querySelector('.submitButton');
-        if (newData.name.length && newData.email.length && newData.message.length) {
-            submitButton.disabled = false;
+        if (isWebkit || (newData.name.length && newData.email.length && newData.message.length)) {
+            newData.disabled = false;
         } else {
-            submitButton.disabled = true;
+            newData.disabled = true;
         };
         setData(newData);
     };
@@ -95,9 +114,11 @@ function ContactForm() {
                         rows='8'
                         value={data.message}
                         onChange={handleChange} />
-                <input type='submit'
+                <button type='submit'
                         className='submitButton'
-                        disabled />
+                        disabled={data.disabled}>
+                            Submit
+               </button>
             </form>
         </>
     );
