@@ -8,7 +8,7 @@ function ContactForm() {
     const initialState = {name: '', email: '', message: '', disabled: true};
     const [data, setData] = useState(initialState);
     const [errors, setErrors] = useState([]);
-    const [message, setMessage] = useState('');
+    const [toastMessage, setToastMessage] = useState('');
 
 
     // const handleChange = (e) => {
@@ -58,7 +58,7 @@ function ContactForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setErrors([]);
-        if (isWebkit && !(newData.name.length && newData.email.length && newData.message.length)) return false;
+        if (isWebkit && !(data.name.length && data.email.length && data.message.length)) return false;
         if (!validate()) return false;
         const emailData = {...data};
         delete emailData.disabled;
@@ -72,8 +72,8 @@ function ContactForm() {
     };
 
     const toast = (msg) => {
-        setMessage(msg);
-        setTimeout(() => {setMessage('')}, 2000);
+        setToastMessage(msg);
+        setTimeout(() => {setToastMessage('')}, 2000);
     }
 
     const validate = () => {
@@ -97,8 +97,8 @@ function ContactForm() {
         <>
             {errors.map(e => 
                 <p key={e} className='error'>{e}</p>)}
-            {message && 
-                <p className='success'>{message}</p>}
+            {toastMessage && 
+                <p className='success'>{toastMessage}</p>}
             <form onSubmit={handleSubmit}>
                 <input type='text'
                         name='name'
