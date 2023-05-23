@@ -58,6 +58,7 @@ function ContactForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setErrors([]);
+        if (isWebkit && !(newData.name.length && newData.email.length && newData.message.length)) return false;
         if (!validate()) return false;
         const emailData = {...data};
         delete emailData.disabled;
@@ -98,7 +99,7 @@ function ContactForm() {
                 <p key={e} className='error'>{e}</p>)}
             {message && 
                 <p className='success'>{message}</p>}
-            <form onSubmit={isWebkit ? () => false : handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <input type='text'
                         name='name'
                         placeholder='Your name'
@@ -115,7 +116,6 @@ function ContactForm() {
                         value={data.message}
                         onChange={handleChange} />
                 <button type='submit'
-                        onClick={handleSubmit}
                         className='submitButton'
                         disabled={data.disabled}>
                             Submit
