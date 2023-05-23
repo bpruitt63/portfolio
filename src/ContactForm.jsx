@@ -98,7 +98,7 @@ function ContactForm() {
                 <p key={e} className='error'>{e}</p>)}
             {message && 
                 <p className='success'>{message}</p>}
-            <form onSubmit={isWebkit ? (e) => e.preventDefault() : handleSubmit}>
+            <form onSubmit={isWebkit ? () => false : handleSubmit}>
                 <input type='text'
                         name='name'
                         placeholder='Your name'
