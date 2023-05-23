@@ -98,7 +98,7 @@ function ContactForm() {
                 <p key={e} className='error'>{e}</p>)}
             {message && 
                 <p className='success'>{message}</p>}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={isWebkit ? (e) => e.preventDefault() : handleSubmit}>
                 <input type='text'
                         name='name'
                         placeholder='Your name'
@@ -115,6 +115,7 @@ function ContactForm() {
                         value={data.message}
                         onChange={handleChange} />
                 <button type='submit'
+                        onClick={handleSubmit}
                         className='submitButton'
                         disabled={data.disabled}>
                             Submit
