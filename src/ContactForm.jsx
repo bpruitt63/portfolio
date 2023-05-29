@@ -36,18 +36,30 @@ function ContactForm() {
     //     setData(newData);
     // };
 
-    const UA = navigator.userAgent;
-    const isWebkit =
-        /\b(iPad|iPhone|iPod)\b/.test(UA) &&
-        /WebKit/.test(UA) &&
-        !/Edge/.test(UA) &&
-        !window.MSStream;
+    // const UA = navigator.userAgent;
+    // const isWebkit =
+    //     /\b(iPad|iPhone|iPod)\b/.test(UA) &&
+    //     /WebKit/.test(UA) &&
+    //     !/Edge/.test(UA) &&
+    //     !window.MSStream;
+
+    // const handleChange = (e) => {
+    //     const {name, value} = e.target;
+    //     const newData = {...data};
+    //     newData[name] = value;
+    //     if (isWebkit || (newData.name.length && newData.email.length && newData.message.length)) {
+    //         newData.disabled = false;
+    //     } else {
+    //         newData.disabled = true;
+    //     };
+    //     setData(newData);
+    // };
 
     const handleChange = (e) => {
         const {name, value} = e.target;
         const newData = {...data};
         newData[name] = value;
-        if (isWebkit || (newData.name.length && newData.email.length && newData.message.length)) {
+        if (newData.name.length && newData.email.length && newData.message.length) {
             newData.disabled = false;
         } else {
             newData.disabled = true;
@@ -58,7 +70,7 @@ function ContactForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setErrors([]);
-        if (isWebkit && !(data.name.length && data.email.length && data.message.length)) return false;
+        //if (isWebkit && !(data.name.length && data.email.length && data.message.length)) return false;
         if (!validate()) return false;
         const emailData = {...data};
         delete emailData.disabled;

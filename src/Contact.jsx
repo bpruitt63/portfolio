@@ -6,6 +6,13 @@ import ContactLink from './ContactLink';
 
 function Contact() {
 
+    const UA = navigator.userAgent;
+    const isWebkit =
+        /\b(iPad|iPhone|iPod)\b/.test(UA) &&
+        /WebKit/.test(UA) &&
+        !/Edge/.test(UA) &&
+        !window.MSStream;
+
     return (
         <>
             <div id='contact' className='pageAnchor'></div>
@@ -21,7 +28,8 @@ function Contact() {
                 </div>
                 <div className='contactForm'>
                     <h3 id='contactMe'>Contact Me</h3>
-                    <ContactForm />
+                    {!isWebkit &&
+                        <ContactForm />}
                 </div>
             </div>
         </>
