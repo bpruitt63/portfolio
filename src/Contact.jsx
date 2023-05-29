@@ -26,11 +26,11 @@ function Contact() {
                                     image={links[l].img}
                                     label={links[l].label} />)}
                 </div>
-                <div className='contactForm'>
-                    <h3 id='contactMe'>Contact Me</h3>
-                    {!isWebkit &&
-                        <ContactForm />}
-                </div>
+                {!isWebkit &&
+                    <div className='contactForm'>
+                        <h3 id='contactMe'>Contact Me</h3>
+                        <ContactForm />
+                    </div>}
             </div>
         </>
     );
