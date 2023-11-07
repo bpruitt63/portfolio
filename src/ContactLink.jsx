@@ -7,7 +7,7 @@ function ContactLink({type, link, image, label}) {
                 src={image}
                 alt={type} />
             <a href={link}
-                target='blank'>
+                target='_blank'>
                     {label}
             </a>
         </div>
