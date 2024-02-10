@@ -2,6 +2,7 @@ import sporty from '../images/sporty.jpg';
 import gamey from '../images/gamey.jpg';
 import boatey from '../images/boatey.jpg';
 import cashcount from '../images/cashcount.jpg';
+import gameCP from '../images/GameCP.jpg';
 
 
 export const projects = [
@@ -31,6 +32,34 @@ export const projects = [
         video: 'https://www.loom.com/embed/befca497d2c443a2bec3e377b9e41c13',
         backendFiles: 'https://github.com/bpruitt63/sporty-backend',
         frontendFiles: 'https://github.com/bpruitt63/sporty-frontend'
+    },
+    {
+        title: 'GameCP',
+        image: {src: gameCP, alt: 'GameCP Screenshot'},
+        description: <>
+                        <p>
+                            Mobile scoreboard PWA that helps refs/scorekeepers 
+                            track time, score, possession, downs, balls, strikes,
+                            outs, etc. for various sports. Connects to Sporty 
+                            to pull game data and save scores in Sporty database.
+                        </p><br/><br/>
+                        <p>
+                            React Native PWA with Expo framework
+                        </p><br/><br/>
+                        <p>
+                            <span className='underlined'>
+                                Demo credentials
+                            </span>
+                            <span>
+                                {' (from Sporty)'}
+                            </span><br/>
+                            Email: demo@demo.com<br/>
+                            Password: demo1234
+                        </p>
+                    </>,
+        link: 'https://bpruitt63.github.io/GameCP/',
+        video: 'https://www.loom.com/embed/a7d9b10f9a6d4186b2f86371cc3c9993',
+        singleRepo: 'https://github.com/bpruitt63/GameCP'
     },
     {
         title: 'CashCount',
