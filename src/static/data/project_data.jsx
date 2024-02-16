@@ -117,31 +117,31 @@ export const projects = [
         backendFiles: 'https://github.com/bpruitt63/capstone2-backend',
         frontendFiles: 'https://github.com/bpruitt63/capstone2-frontend'
     },
-    {
-        title: 'Gamey',
-        image: {src: gamey, alt: 'Gamey Screenshot'},
-        description: <>
-                        <p>
-                            Web app for gamers. Interacts with RAWG API to find 
-                            data on specific video games. Users can review games, 
-                            ask and answer questions, and upvote/downvote reviews 
-                            and answers.
-                        </p><br/><br/>
-                        <p>
-                            Flask with Python, Jinja, Flask SQLAlchemy, Flask 
-                            WTForms, Flask Bcrypt, JavaScript with axios, and 
-                            PostgreSQL database.
-                        </p><br/><br/>
-                        <p>
-                            <span className='underlined'>
-                                Demo credentials
-                            </span><br/>
-                            Email: demo@demo.com<br/>
-                            Password: demo1234
-                        </p>
-                    </>,
-        link: 'https://gamey-project.herokuapp.com/',
-        video: 'https://www.loom.com/embed/2dd8d96dce2c49a9b9c109c1f62d6511',
-        singleRepo: 'https://github.com/bpruitt63/capstone1'
-    }
+    // {
+    //     title: 'Gamey',
+    //     image: {src: gamey, alt: 'Gamey Screenshot'},
+    //     description: <>
+    //                     <p>
+    //                         Web app for gamers. Interacts with RAWG API to find 
+    //                         data on specific video games. Users can review games, 
+    //                         ask and answer questions, and upvote/downvote reviews 
+    //                         and answers.
+    //                     </p><br/><br/>
+    //                     <p>
+    //                         Flask with Python, Jinja, Flask SQLAlchemy, Flask 
+    //                         WTForms, Flask Bcrypt, JavaScript with axios, and 
+    //                         PostgreSQL database.
+    //                     </p><br/><br/>
+    //                     <p>
+    //                         <span className='underlined'>
+    //                             Demo credentials
+    //                         </span><br/>
+    //                         Email: demo@demo.com<br/>
+    //                         Password: demo1234
+    //                     </p>
+    //                 </>,
+    //     link: 'https://gamey-project.herokuapp.com/',
+    //     video: 'https://www.loom.com/embed/2dd8d96dce2c49a9b9c109c1f62d6511',
+    //     singleRepo: 'https://github.com/bpruitt63/capstone1'
+    // }
 ];

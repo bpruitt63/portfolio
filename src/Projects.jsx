@@ -10,10 +10,10 @@ function Projects() {
             <div id='projects' className='pageAnchor'></div>
             <h2 className='sectionTitle'>Projects</h2>
             <div className='projects'>
-            {projects.map(p =>
-                <Project key={p.link} 
-                        project={p} />)}
-        </div>
+                {projects.map(p =>
+                    <Project key={p.link} 
+                            project={p} />)}
+            </div>
         </>
     );
 };

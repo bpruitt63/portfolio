@@ -33,8 +33,7 @@ export const aboutMe = <>
                                 When I'm not coding, you can usually find me on my
                                 boat as long as the weather permits (see projects: Boatey).  
                                 Other hobbies include lifting weights and playing video games,
-                                particularly in the strategy, open world, and RPG genres
-                                (see projects: Gamey).
+                                particularly in the strategy, open world, and RPG genres.
                             </p>
                         </>
 
