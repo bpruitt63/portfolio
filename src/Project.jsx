@@ -33,26 +33,26 @@ function Project({project}) {
                 </button>
             </div>
             <a href={project.link}
-                target='blank'
+                target='_blank'
                 className='projectButton'>
                 View Site
             </a>
             <div className='projectRepos'>
                 {project.backendFiles &&
                     <a href={project.backendFiles}
-                        target='blank'
+                        target='_blank'
                         className='projectButton'>
                         Backend Repo
                     </a>}
                 {project.frontendFiles &&
                     <a href={project.frontendFiles}
-                        target='blank'
+                        target='_blank'
                         className='projectButton'>
                         Frontend Repo
                     </a>}
                 {project.singleRepo &&
                     <a href={project.singleRepo}
-                        target='blank'
+                        target='_blank'
                         className='projectButton'>
                         Project Repo
                     </a>}
